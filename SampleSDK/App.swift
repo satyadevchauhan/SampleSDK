@@ -16,4 +16,8 @@ public class App {
     public func featureOne() {
         print("FeatureOne")
     }
+    
+    public func featureTwo() {
+        print("FeatureTwo")
+    }
 }
