@@ -10,6 +10,7 @@
 		4254003B2689AFA100147FC7 /* SampleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425400312689AFA100147FC7 /* SampleSDK.framework */; };
 		425400402689AFA100147FC7 /* SampleSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254003F2689AFA100147FC7 /* SampleSDKTests.swift */; };
 		425400422689AFA100147FC7 /* SampleSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 425400342689AFA100147FC7 /* SampleSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4254004E2689B09A00147FC7 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4254004D2689B09A00147FC7 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4254003A2689AFA100147FC7 /* SampleSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4254003F2689AFA100147FC7 /* SampleSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSDKTests.swift; sourceTree = "<group>"; };
 		425400412689AFA100147FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4254004D2689B09A00147FC7 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				425400342689AFA100147FC7 /* SampleSDK.h */,
 				425400352689AFA100147FC7 /* Info.plist */,
+				4254004D2689B09A00147FC7 /* App.swift */,
 			);
 			path = SampleSDK;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					425400302689AFA100147FC7 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					425400392689AFA100147FC7 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4254004E2689B09A00147FC7 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		425400462689AFA100147FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.satyadev.SampleSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		425400472689AFA100147FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +395,7 @@
 		425400492689AFA100147FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		4254004A2689AFA100147FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
